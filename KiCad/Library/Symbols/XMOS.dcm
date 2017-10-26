@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XU216-512-TQ128
+D Multicore Microcontroller with Advanced Multi-Core RISC Architecture
+K USB XMOS Multicore Microcontroller
+$ENDCMP
+#
+#End Doc Library

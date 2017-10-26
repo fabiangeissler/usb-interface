@@ -1,0 +1,249 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:logic
+LIBS:XMOS
+LIBS:power-management
+LIBS:timing
+LIBS:Microcontroller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CS2100-CP U?
+U 1 1 58AC12C6
+P 4700 3800
+F 0 "U?" H 4700 3950 60  0000 L CNN
+F 1 "CS2100-CP" H 4700 3850 60  0000 L CNN
+F 2 "Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm" H 4700 4150 60  0001 L CNN
+F 3 "https://d3uzseaevmutz1.cloudfront.net/pubs/proDatasheet/CS2100-CP_F3.pdf" H 4700 4050 60  0001 L CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y?
+U 1 1 58AC1355
+P 4150 4600
+F 0 "Y?" H 4150 4750 50  0000 C CNN
+F 1 "24MHz 20pF" H 4150 4450 50  0000 C CNN
+F 2 "" H 4150 4600 50  0000 C CNN
+F 3 "" H 4150 4600 50  0000 C CNN
+	1    4150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58AC1456
+P 4400 4950
+F 0 "C?" H 4425 5050 50  0000 L CNN
+F 1 "40p" H 4425 4850 50  0000 L CNN
+F 2 "" H 4438 4800 50  0000 C CNN
+F 3 "" H 4400 4950 50  0000 C CNN
+	1    4400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58AC1484
+P 3900 4950
+F 0 "C?" H 3925 5050 50  0000 L CNN
+F 1 "40p" H 3925 4850 50  0000 L CNN
+F 2 "" H 3938 4800 50  0000 C CNN
+F 3 "" H 3900 4950 50  0000 C CNN
+	1    3900 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4500 4400 4500
+Wire Wire Line
+	4400 4500 4400 4800
+Wire Wire Line
+	4300 4600 4400 4600
+Connection ~ 4400 4600
+Wire Wire Line
+	4500 4400 3900 4400
+Wire Wire Line
+	3900 4400 3900 4800
+Wire Wire Line
+	4000 4600 3900 4600
+Connection ~ 3900 4600
+$Comp
+L GND #PWR?
+U 1 1 58AC14D8
+P 4400 5200
+F 0 "#PWR?" H 4400 4950 50  0001 C CNN
+F 1 "GND" H 4400 5050 50  0000 C CNN
+F 2 "" H 4400 5200 50  0000 C CNN
+F 3 "" H 4400 5200 50  0000 C CNN
+	1    4400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AC14F6
+P 3900 5200
+F 0 "#PWR?" H 3900 4950 50  0001 C CNN
+F 1 "GND" H 3900 5050 50  0000 C CNN
+F 2 "" H 3900 5200 50  0000 C CNN
+F 3 "" H 3900 5200 50  0000 C CNN
+	1    3900 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5100 4400 5200
+Wire Wire Line
+	3900 5100 3900 5200
+Text HLabel 3700 4300 0    60   Input ~ 0
+MCLK_SYNC
+Wire Wire Line
+	4500 4300 3700 4300
+$Comp
+L GND #PWR?
+U 1 1 58AC3531
+P 4000 4100
+F 0 "#PWR?" H 4000 3850 50  0001 C CNN
+F 1 "GND" H 4000 3950 50  0000 C CNN
+F 2 "" H 4000 4100 50  0000 C CNN
+F 3 "" H 4000 4100 50  0000 C CNN
+	1    4000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58AC38D4
+P 4250 4100
+F 0 "R?" V 4330 4100 50  0000 C CNN
+F 1 "1k" V 4250 4100 50  0000 C CNN
+F 2 "" V 4180 4100 50  0000 C CNN
+F 3 "" H 4250 4100 50  0000 C CNN
+	1    4250 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4100 4400 4100
+Wire Wire Line
+	4100 4100 4000 4100
+Text HLabel 3700 3900 0    60   BiDi ~ 0
+SDA
+Text HLabel 3700 4000 0    60   Input ~ 0
+SCL
+Wire Wire Line
+	3700 3900 4500 3900
+Wire Wire Line
+	4500 4000 3700 4000
+$Comp
+L +3V3 #PWR?
+U 1 1 58AC3FC0
+P 6100 3800
+F 0 "#PWR?" H 6100 3650 50  0001 C CNN
+F 1 "+3V3" H 6100 3940 50  0000 C CNN
+F 2 "" H 6100 3800 50  0000 C CNN
+F 3 "" H 6100 3800 50  0000 C CNN
+	1    6100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AC3FE1
+P 6100 4600
+F 0 "#PWR?" H 6100 4350 50  0001 C CNN
+F 1 "GND" H 6100 4450 50  0000 C CNN
+F 2 "" H 6100 4600 50  0000 C CNN
+F 3 "" H 6100 4600 50  0000 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4500 6100 4500
+Wire Wire Line
+	6100 4500 6100 4600
+Wire Wire Line
+	6000 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 3800
+$Comp
+L C C?
+U 1 1 58AC403F
+P 7500 4200
+F 0 "C?" H 7525 4300 50  0000 L CNN
+F 1 "100n" H 7525 4100 50  0000 L CNN
+F 2 "" H 7538 4050 50  0000 C CNN
+F 3 "" H 7500 4200 50  0000 C CNN
+	1    7500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AC4074
+P 7500 4450
+F 0 "#PWR?" H 7500 4200 50  0001 C CNN
+F 1 "GND" H 7500 4300 50  0000 C CNN
+F 2 "" H 7500 4450 50  0000 C CNN
+F 3 "" H 7500 4450 50  0000 C CNN
+	1    7500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 58AC4091
+P 7500 3950
+F 0 "#PWR?" H 7500 3800 50  0001 C CNN
+F 1 "+3V3" H 7500 4090 50  0000 C CNN
+F 2 "" H 7500 3950 50  0000 C CNN
+F 3 "" H 7500 3950 50  0000 C CNN
+	1    7500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3950 7500 4050
+Wire Wire Line
+	7500 4350 7500 4450
+Text Notes 4900 5100 0    60   ~ 0
+Direct MCLK distribution or distribution IC?
+Text Label 6400 4100 2    60   ~ 0
+MCLK
+Text Label 6400 4300 2    60   ~ 0
+SYSCLK
+Wire Wire Line
+	6400 4100 6000 4100
+Wire Wire Line
+	6400 4300 6000 4300
+$EndSCHEMATC

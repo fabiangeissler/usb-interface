@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LVC1G08
+D Single 2-input AND gate
+K AND NXP single
+$ENDCMP
+#
+#End Doc Library

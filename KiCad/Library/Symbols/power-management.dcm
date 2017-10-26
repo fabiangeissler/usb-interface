@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RT8096
+D 1A, 1.5MHz, 6V CMCOT Synchronous Step-Down Converter
+K Step-Down Converter Richtek
+$ENDCMP
+#
+#End Doc Library
